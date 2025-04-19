@@ -369,12 +369,12 @@ document.addEventListener('DOMContentLoaded', function() {
         // Different link color based on relationship
         if ((org1.type === 'herbivore' && org2.type === 'plant') || 
             (org2.type === 'herbivore' && org1.type === 'plant')) {
-            linkElement.style.backgroundColor = 'rgba(0, 255, 0, 0.2)';
+            linkElement.style.backgroundColor = 'rgba(0, 255, 0, 0.1)';
         } else if ((org1.type === 'carnivore' && (org2.type === 'herbivore' || org2.type === 'omnivore')) || 
                    (org2.type === 'carnivore' && (org1.type === 'herbivore' || org1.type === 'omnivore'))) {
-            linkElement.style.backgroundColor = 'rgba(255, 0, 0, 0.2)';
+            linkElement.style.backgroundColor = 'rgba(255, 0, 0, 0.1)';
         } else {
-            linkElement.style.backgroundColor = 'rgba(0, 0, 0, 0.1)';
+            linkElement.style.backgroundColor = 'rgba(0, 0, 0, 0.05)';
         }
         
         simulationArea.appendChild(linkElement);
