@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecosystem Simulation</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Roboto+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="simulation-container">
+        <div class="control-panel">
+            <div class="panel-title">
+                <i class="fas fa-leaf"></i>
+                <h2>Ecosystem Simulator</h2>
+            </div>
+            
+            <div class="control-group">
+                <h3><i class="fas fa-plus-circle"></i> Add Organisms</h3>
+                <label for="organismType">Organism Type</label>
+                <select id="organismType">
+                    <option value="plant">🌿 Plant</option>
+                    <option value="herbivore">🐇 Herbivore</option>
+                    <option value="carnivore">🐺 Carnivore</option>
+                    <option value="omnivore">🦊 Omnivore</option>
+                </select>
+                
+                <label for="organismCount">Count</label>
+                <input type="number" id="organismCount" value="10" min="1" max="100">
+                
+                <button id="addOrganisms" class="btn btn-primary">
+                    <i class="fas fa-plus"></i> Add
+                </button>
+            </div>
+            
+            <div class="control-group">
+                <h3><i class="fas fa-cog"></i> Simulation Controls</h3>
+                <button id="togglePause" class="btn btn-secondary">
+                    <i class="fas fa-pause"></i> Pause
+                </button>
+                <button id="resetSimulation" class="btn btn-danger">
+                    <i class="fas fa-redo"></i> Reset
+                </button>
+            </div>
+            
+            <div class="stats-panel">
+                <div class="stat-card">
+                    <h4><i class="fas fa-seedling"></i> Plants</h4>
+                    <div id="plantCount" class="stat-value">0</div>
+                </div>
+                <div class="stat-card">
+                    <h4><i class="fas fa-rabbit"></i> Herbivores</h4>
+                    <div id="herbivoreCount" class="stat-value">0</div>
+                </div>
+                <div class="stat-card">
+                    <h4><i class="fas fa-wolf-pack-battalion"></i> Carnivores</h4>
+                    <div id="carnivoreCount" class="stat-value">0</div>
+                </div>
+                <div class="stat-card">
+                    <h4><i class="fas fa-otter"></i> Omnivores</h4>
+                    <div id="omnivoreCount" class="stat-value">0</div>
+                </div>
+                <div class="stat-card">
+                    <h4><i class="fas fa-history"></i> Cycle</h4>
+                    <div id="cycleCount" class="stat-value">0</div>
+                </div>
+                <div class="stat-card">
+                    <h4><i class="fas fa-bolt"></i> Avg Energy</h4>
+                    <div id="avgEnergy" class="stat-value">0</div>
+                </div>
+                <div class="stat-card">
+                    <h4><i class="fas fa-layer-group"></i> Total</h4>
+                    <div id="totalCount" class="stat-value">0</div>
+                </div>
+            </div>
+        </div>
+        
+        <div id="simulationArea"></div>
+    </div>
+
+    <script src="simulation.js"></script>
+</body>
+</html>
