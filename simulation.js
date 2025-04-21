@@ -352,7 +352,8 @@ document.addEventListener('DOMContentLoaded', function() {
             });
         }
     }
-    
+
+    /*
     // Create a visual link between two organisms
     function createLink(org1, org2) {
         const linkElement = document.createElement('div');
@@ -385,6 +386,7 @@ document.addEventListener('DOMContentLoaded', function() {
             org2: org2
         });
     }
+*/
     
     // Add new organisms to the simulation
     function addOrganisms(type, count) {
