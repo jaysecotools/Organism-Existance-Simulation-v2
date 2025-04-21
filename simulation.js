@@ -515,10 +515,9 @@ document.addEventListener('DOMContentLoaded', function() {
             organism.element.style.top = `${organism.y}px`;
         });
 
-        /*
         // Recreate links to ensure proper positioning
         updateLinks();
-    }); */
+    });
     
     // Start the simulation
     init();
