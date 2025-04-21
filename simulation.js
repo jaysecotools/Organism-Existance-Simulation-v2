@@ -320,7 +320,8 @@ document.addEventListener('DOMContentLoaded', function() {
         const dy = org2.y - org1.y;
         return Math.sqrt(dx * dx + dy * dy);
     }
-    
+
+    /*
     // Update visual links between organisms
     function updateLinks() {
         // Clear existing links
@@ -353,7 +354,6 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 
-    /*
     // Create a visual link between two organisms
     function createLink(org1, org2) {
         const linkElement = document.createElement('div');
