@@ -321,7 +321,6 @@ document.addEventListener('DOMContentLoaded', function() {
         return Math.sqrt(dx * dx + dy * dy);
     }
 
-    /*
     // Update visual links between organisms
     function updateLinks() {
         // Clear existing links
@@ -386,7 +385,6 @@ document.addEventListener('DOMContentLoaded', function() {
             org2: org2
         });
     }
-*/
     
     // Add new organisms to the simulation
     function addOrganisms(type, count) {
